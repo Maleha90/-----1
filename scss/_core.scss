@@ -1,0 +1,31 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 100%;
+}
+
+.wrap {
+    min-width: 320px;
+    max-width: 960px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.top {
+    background-color: #fcdb00;
+}
+
+.footer {
+    background-color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

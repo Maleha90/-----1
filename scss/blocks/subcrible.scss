@@ -1,0 +1,123 @@
+.subcrible {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 10px;
+
+    .sub__header {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $white;
+        margin-top: 115px;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $row;
+        margin: 0 0 40px;
+    }
+
+    .sub__forma {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
+
+        .sub__text {
+            flex-basis: 100%;
+            input {
+                width: 600px;
+                height: 44px;
+            }
+        }
+
+        form {
+            display: flex;
+        }
+
+        .sub__btn {
+            a {
+                @include btn() {
+                    background: $white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    width: 140px;
+                    color: $black;
+                    margin: 0 5px;
+                    border: 1px;
+                };
+            }
+        }
+    }
+}
+
+@media(max-width: 780px) {
+    .subcrible {
+        .sub__header{
+            font-size: 28px;
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .sub__forma {
+            .sub__text {
+                input {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 570px) {
+    .subcrible {
+        .sub__forma {
+            .sub__text {
+                input {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .subcrible {
+        p {
+            font-size: 19px;
+        }
+        .sub__forma {
+            .sub__text {
+                input {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .subcrible {
+        .sub__header {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}

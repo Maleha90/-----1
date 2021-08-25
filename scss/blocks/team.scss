@@ -1,0 +1,160 @@
+.team {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .team__header {
+        flex-basis: 100%;
+        font-size: 32px;
+        line-height: 32px;
+        color: $black;
+        margin-top: 115px;
+    }
+
+    p {
+        flex-basis: 100%;
+        font-size: 20px;
+        line-height: 24px;
+        color: $row;
+        margin: 0 0 80px;
+    }
+
+    .team__wrap {
+        display: flex;
+        flex-basis: 25%;
+        justify-content: center;
+
+        .team__name {
+            font-size: 22px;
+            line-height: 24px;
+            color: $black;
+            margin: 30px 0 10px;
+        }
+
+        .team__job {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+
+        .team__text {
+            font-size: 14px;
+            line-height: 18px;
+            color: #313841;
+            margin-bottom: 15px;
+            padding: 0 3px 0;
+        }
+
+        .team__icons  {
+            margin-bottom: 60px;
+
+            a {
+                padding: 5px;
+            }
+            
+            
+        }
+    }
+
+}
+
+@media(max-width: 780px) {
+    .team {
+        .team__header {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .team__wrap {
+            .team__name {
+                font-size: 18px;
+            }
+
+            .team__job {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .team__text {
+                font-size: 12px;
+
+            }
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    .team {
+        .team__wrap {
+            flex-basis: 50%;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .team {
+        margin: 0 10px;
+        .team__header {
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        .team__wrap {
+            .team__name {
+                margin: 15px 0 5px;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .team {
+        .team__header {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 50px;
+        }
+
+        .team__wrap {
+            flex-basis: 100%;
+
+            .team__name {
+                font-size: 16px;
+                margin: 10px 0 5px;
+            }
+
+            .team__job {
+                margin-bottom: 5px;
+            }
+
+            .team__text {
+                margin-bottom: 5px;
+            }
+
+            .team__icons {
+                margin-bottom: 40px;
+            }
+        } 
+    }
+}
+
+@media(max-width: 320px) {
+    .team {
+        p {
+            font-size: 14px;
+        }
+    }
+}

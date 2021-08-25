@@ -1,0 +1,48 @@
+.top__menu {
+    
+    .dropbtn {
+        background: url(../img/menu2.png) no-repeat;
+        box-shadow: none;
+        border: none;
+        display: block;
+        cursor: pointer;
+        width: 19px;
+        height: 16px;
+    }
+    
+
+    .off__canvas {
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $top;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .off__canvas a:hover {
+        background-color: $top-info;
+        color: #fff;
+    }
+
+    .show {display: block;}
+
+
+}
+   
+   
+   

@@ -1,0 +1,237 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+    .contact__header {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $black;
+        margin: 115px 0 27px;
+    }
+
+    p {
+        flex-basis: 100%;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $row;
+        margin: 0 0 20px;
+    }
+
+    .contact__location {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        margin: 0 10px;
+
+        .contact__addres {
+            width: 250px;
+
+            img {
+                margin-top: 30px;
+            }
+
+            .contact__link {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $black;
+                margin: 24px 0 0;
+            }
+
+            .contact__name {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 400;
+                margin: 0 0 45px;
+            }
+        }
+    }
+
+    .contact__person {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+
+
+        .contact__email, .contact__full-name {
+            flex-basis: 100%;
+            input {
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 400;
+                padding: 0 5px;
+                width: 480px;
+                height: 55px;
+                border: 3px solid $black;
+            }
+        }
+
+        .contact__message {
+            textarea {
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 400;
+                padding: 5px 5px 0;
+                width: 480px;
+                height: 210px;
+                border: 3px solid $black;
+            }
+        }
+
+        .contact__btn {
+            display: flex;
+            justify-content: center;
+            a {
+                display: flex;
+                justify-content: center;
+                @include btn() {
+                    background: $black;
+                    font-size: 16px;
+                    line-height: 24px;
+                    width: 170px;
+                    color: $white;
+                    margin: 10px 0 60px;                 
+                };
+            }    
+        }
+    }
+}
+
+@media(max-width: 780px) {
+    .contact {
+        .contact__header {
+            font-size: 28px;
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .contact__location {
+            width: 100px;
+
+            .contact__addres {
+                .contact__link {
+                    font-size: 18px;
+                    margin: 5px 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .contact {
+        margin: 0 10px;
+
+        p {
+            font-size: 18px;
+            margin-bottom: 28px;
+        }
+
+        .contact__location {
+            display: block;
+
+            .contact__addres {
+                width: auto;
+
+                img {
+                    margin-top: 18px;
+                }
+                .contact__link {
+                    font-size: 18px;
+                    margin: 5px 0 0;
+                }
+                .contact__name {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .contact__person {
+            display: flex;
+            justify-content: center;
+            flex-basis: 100%;
+    
+    
+            .contact__email, .contact__full-name {
+                flex-basis: 100%;
+                margin-bottom: 10px;
+                input {
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 400;
+                    width: 250px;
+                    height: 25px;
+                    border: 2px solid $black;
+                }
+            }
+    
+            .contact__message {
+                margin-bottom: 10px;
+                textarea {
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 400;
+                    width: 250px;
+                    height: 80px;
+                    border: 2px solid $black;
+                }
+            }
+
+            .contact__btn a{
+                width: 130px;
+                height: 20px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .contact {
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .contact {
+        .contact__header {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .contact__location {
+            .contact__addres {
+                img {
+                    margin-top: 0;
+                }
+
+                .contact__link {
+                    font-size: 16px;
+                }
+
+                .contact__name {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

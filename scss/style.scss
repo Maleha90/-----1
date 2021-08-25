@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+@import 'core';
+@import 'fonts';
+@import 'mixins';
+@import 'reset';
+@import 'variables';
+
+@import "blocks/top";
+@import "blocks/social";
+@import "blocks/cover";
+@import "blocks/row";
+@import "blocks/pricing";
+@import "blocks/works";
+@import "blocks/team";
+@import "blocks/stats";
+@import "blocks/contact";
+@import "blocks/subcrible";
+@import "blocks/widgets";
+@import "blocks/script";

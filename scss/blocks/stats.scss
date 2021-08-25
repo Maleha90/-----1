@@ -1,0 +1,246 @@
+.stats {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .stats__header {
+        flex-basis: 100%;
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $black;
+        margin-top: 115px;
+    }
+
+    p {
+        flex-basis: 100%;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $row;
+        margin-top: 0;
+    }
+
+    .stats__info {
+        display: flex;
+        flex-basis: 60%;
+        justify-content: space-between;
+        text-align: center;
+        
+        .stats__test {
+            img {
+                margin-top: 30px;
+            }
+
+            .stats__number {
+                margin: 15px 0 0;
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $black;
+            }
+
+            .stats__products {
+                margin-top: 0;
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .stats__contener {
+        flex-basis: 100%;
+
+        .stats__customer {
+            img {
+                margin-top: 80px;
+            }
+    
+            .stats__wrap {
+                margin: 15px 0 0;
+                font-size: 22px;
+                line-height: 24px;
+                font-weight: 400;
+                color: $black;
+            }
+    
+            .stats__job {
+                margin: 5px 0 30px;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .stats__footer {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            .stats__text {
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+        }
+        
+    }
+
+}
+
+@media(max-width: 780px) {
+    .stats {
+        .stats__header {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .stats__info {
+            .stats__test {
+                .stats__number {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .stats__contener {
+            .stats__customer {
+                .stats__wrap {
+                    font-size: 18px;
+                }
+
+                .stats__job {
+                    font-size: 14px;
+                }
+            }
+
+            .stats__footer {
+                width: 500px;
+                .stats__text {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .stats {
+        margin: 0 10px;
+        .stats__header {
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .stats__info {
+            display: flex;
+            flex-basis: 100%;
+            .stats__test {
+                
+                .stats__number {
+                    font-size: 18px;
+                    margin: 5px 0 0;
+                }
+            }
+        }
+
+        .stats__contener {
+            .stats__customer {
+
+                img {
+                    margin-top: 60px;
+                }
+                .stats__wrap {
+                    margin: 5px 0 0;
+                }
+
+                .stats__job {
+                    margin: 0 0 20px;
+                }
+            }
+
+            .stats__footer {
+                width: 400px;
+                .stats__text {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .stats {
+        p {
+            font-size: 16px;
+        }
+        .stats__contener {
+            .stats__footer {
+                width: 300px;
+                .stats__text {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .stats {
+        .stats__header {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .stats__info {
+            display: flex;
+            flex-basis: 100%;
+            .stats__test {
+                
+                .stats__number {
+                    font-size: 16px;
+                }
+
+                .stats__products {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .stats__contener {
+            .stats__customer {
+
+                img {
+                    margin-top: 40px;
+                }
+                .stats__wrap {
+                    font-size: 16px;
+                }
+
+                .stats__job {
+                    margin: 0 0 20px;
+                }
+            }
+            
+        }
+    }
+}

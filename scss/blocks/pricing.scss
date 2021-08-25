@@ -1,0 +1,223 @@
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+        .wrap__content {
+            flex-basis: 100%;
+            justify-content: center;
+            text-align: center;
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 700;
+            color: $black;
+            margin: 115px 0 0;
+        }
+
+        p {
+            flex-basis: 100%;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+            padding: 0 3px;
+            color: $row;
+            margin-bottom: 0;
+        }
+
+
+            .pricing__table {
+                flex-basis: 33.3%;
+                justify-content: center;
+                text-align: center;
+
+                img {
+                    margin-top: 80px;
+                }
+                
+            }
+
+            .pricing__wrap {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $black;
+            }
+
+            .pricing__text {
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            .pricing__chek {
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: 700;
+                color: $black;
+                background-image: linear-gradient(black, black);
+                background-size: 10% 2px;
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                margin-bottom: 0px;
+            }
+
+            .pricing__price {
+                font-size: 16px;
+                line-height: 48px;
+                margin-top: 0;
+            }
+
+            .pricing__btn{
+                display: inline-block;
+                justify-content: center;
+                margin-bottom: 80px;
+            a {
+                display: flex;
+                flex-basis: 100%;
+                justify-content: center;
+                @include btn() {
+                    background: $white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    width: 140px;
+                    color: $black;
+                    margin: 0 5px;
+                };
+            }
+
+        }
+    
+}
+
+@media(max-width: 780px) {
+    .pricing {
+        .wrap__content {
+            font-size: 28px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+
+        .pricing__table {
+            .pricing__wrap {
+                font-size: 18px;
+            }
+
+            .pricing__text {
+                line-height: 18px;
+            }
+
+            .pricing__chek {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .pricing__price {
+                font-size: 14px;
+            }
+
+            .pricing__btn a {
+                width: 120px;
+                height: 15px;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .pricing {
+        margin: 0 10px;
+        .wrap__content {
+            font-size: 28px;
+            margin-top: 100px;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 20px;
+            padding: 0 4px;
+        }
+
+        .pricing__table {
+            flex-basis: 100%;
+            padding: 0 5px;
+            img {
+                margin-top: 25px;
+            }
+       
+
+            .pricing__text {
+                margin: 0;
+            }
+
+            
+
+            .pricing__wrap {
+                font-size: 18px;
+                margin: 10px 0;
+            }
+
+            .pricing__chek {
+                font-size: 18px;
+                margin: 12px 0 0;
+            }
+
+            .pricing__price {
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .pricing__btn {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .pricing {
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .pricing {
+        .wrap__content {
+            font-size: 24px;
+            margin-top: 100px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .pricing__table {
+
+            img {
+                margin-top: 50px;
+            }
+
+            .pricing__wrap {
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            .pricing__btn {
+                margin-bottom: 10px;
+            }
+
+            .pricing__chek {
+                font-size: 16px;
+            }
+        }
+    }
+}
